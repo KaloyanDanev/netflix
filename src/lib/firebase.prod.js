@@ -2,11 +2,9 @@ import Firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 import { seedDatabase } from '../seed';
-require('dotenv').config({path:__dirname+'/.env'})
-
 
 const config = {
-    apiKey: process.env.FIREBASE_APIKEY,
+    apiKey: process.env.REACT_APP_FIREBASE_APIKEY,
     authDomain: "netflix-ce95a.firebaseapp.com",
     databaseURL: "https://netflix-ce95a.firebaseio.com",
     projectId: "netflix-ce95a",
